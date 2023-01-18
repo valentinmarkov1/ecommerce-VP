@@ -1,0 +1,26 @@
+
+.imagen{
+    height: 3rem;
+    margin-right: 5px;
+}
+.boton{
+    color: rgb(254, 250, 250);
+   
+}
+
+.navegador{
+    background-color: rgb(4, 94, 139);
+    display: flex;
+    display: inline;
+}
+
+.carrito{
+    color: rgb(250, 248, 248);
+    margin-left: 0.5em;
+    
+}
+
+.textonav{
+  flex-grow: 1;
+}
+ 
