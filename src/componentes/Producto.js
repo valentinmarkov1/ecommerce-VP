@@ -8,7 +8,7 @@ import { IconButton } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
-export default function (Producto) {
+export default function Producto ({producto:{id,nombre,image,precio,rating,decripcion}}) {
   return (
     <Card  sx={{ maxWidth: 250 }}>
       <CardMedia
@@ -16,23 +16,24 @@ export default function (Producto) {
         component="img"
         alt="Chomba"
         height="300"
-        image='https://http2.mlstatic.com/D_NQ_NP_797001-MLA26840571309_022018-O.jpg'
+        image= {image}
       />
 
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Chomba Seleccion Argentina
+        <Typography
+        varian='h5'
+        color='textSecondary'
+        >
+         
         </Typography>
+       
         <Typography size="small" variant="body2" color="text.secondary">
-          Movete con comodidad incluso bajo el sol intenso. No importa si estás en la tribuna o en la calle, siempre podrás mostrar lo que sentís por la selección Argentina con esta chomba adidas. Su tejido suave y absorbente ayuda a mantener tu cuerpo fresco y cómodo en todo momento.
+          
         </Typography>
       </CardContent>
+       {precio}
       <CardActions>
-        <strong>
-          <div>
-            $15.000
-          </div>
-        </strong>
+        
         <IconButton arial-aria-label='Add to Cart'>
           <AddShoppingCartIcon> fontSize='large'</AddShoppingCartIcon>
         </IconButton>
